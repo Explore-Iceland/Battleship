@@ -68,3 +68,17 @@ describe('checkForShip', function(){
   });
 });
 
+describe("damageShip", function (){
+  var damageShip = require('../game_logic/ship_methods.js').damageShip;
+
+  it('should register damage on a given ship at a given location', function() {
+   var ship = {
+     location: [[0,0,]],
+     damage: []
+   };
+
+   damageShip(ship, [0,0]);
+
+   expect(ship.damage).to.not.be.empty;
+ });
+});
