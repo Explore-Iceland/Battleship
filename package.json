@@ -1,8 +1,11 @@
 {
   "dependencies": {
+    "add": "^2.0.6",
+    "extract-text-webpack-plugin": "v4.0.0-alpha.0",
     "mocha-junit-reporter": "^1.17.0",
     "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.10"
+    "webpack-cli": "^2.0.10",
+    "yarn": "^1.5.1"
   },
   "name": "Battleship",
   "version": "1.0.0",
