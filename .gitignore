@@ -2,7 +2,6 @@ node_modules
 public/*
 !public/.gitkeep
 dist
-test-results
 
 
 # OS generated files #
