@@ -22,6 +22,10 @@ const damageShip = (ship,coordinates) => {
 	ship.damage.push(coordinates)
 }
 
+const healShip = (ship,health) => {
+	ship.health.push(health)
+}
+
 const fire = (player, coordinates) => {
 	const ship = checkForShip(player, coordinates)
 
@@ -33,3 +37,4 @@ const fire = (player, coordinates) => {
 module.exports.checkForShip = checkForShip
 module.exports.damageShip = damageShip
 module.exports.fire = fire
+module.exports.healShip = healShip

@@ -83,6 +83,21 @@ describe("damageShip", function (){
    expect(ship.damage[0]).to.deep.equal([0,0]);
  });
 });
+
+describe("healShip", function (){
+  const healShip = require('../src/game_logic/ship_methods.js').healShip;
+  // making it fail on purpose - not a real test.
+  it('should heal a given ship at a given location', function() {
+   let ship = {
+     location: [[0,0,]],
+     health: []
+   };
+
+   healShip(ship, [0,0]);
+
+   expect(ship.healShip).to.not.be.empty;
+ });
+});
 describe('fire', function () {
 	const fire = require('../src/game_logic/ship_methods').fire;
 
